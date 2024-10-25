@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const AvailablePlayers = () => {
   const [recipr, setRecipr] = useState([]);
   useEffect(() => {
-    fetch('./public/playing.json')
+    fetch('../public/playing.json')
       .then(res => res.json())
       .then(data => setRecipr(data));
   }, []);
