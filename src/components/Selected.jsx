@@ -14,6 +14,7 @@ const Selected = ({ players }) => {
             <button className="btn bg-lime-300">Delete</button>
           </div>
         ))}
+        <button className="btn bg-lime-300 my-8">Add More Player</button>
       </div>
     </>
   );

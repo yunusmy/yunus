@@ -18,7 +18,7 @@ const Button = ({ handleStatus, isActive, addplayering, players }) => {
               className={`${isActive.able ? 'btn' : 'btn bg-lime-300'}`}
               onClick={() => handleStatus('Selected')}
             >
-              Selected (0)
+              Selected {0 + players.length}
             </button>
           </div>
         </div>
