@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const AvailablePlayers = () => {
+const AvailablePlayers = ({ addplayering }) => {
   const [recipr, setRecipr] = useState([]);
   useEffect(() => {
     fetch('playing.json')
@@ -33,7 +33,9 @@ const AvailablePlayers = () => {
 
               <div className="flex justify-between">
                 <p>{recipe.price}</p>
-                <button className="btn">Choose Player</button>
+                <button className="btn" onClick={() => addplayering(recipe)}>
+                  Choose Player
+                </button>
               </div>
             </div>
           ))}

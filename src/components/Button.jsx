@@ -1,7 +1,7 @@
 import AvailablePlayers from './AvailablePlayers';
 import Selected from './Selected';
 
-const Button = ({ handleStatus, isActive }) => {
+const Button = ({ handleStatus, isActive, addplayering, players }) => {
   return (
     <>
       <div className="container mx-auto">
@@ -24,9 +24,9 @@ const Button = ({ handleStatus, isActive }) => {
         </div>
 
         {isActive.able ? (
-          <AvailablePlayers></AvailablePlayers>
+          <AvailablePlayers addplayering={addplayering}></AvailablePlayers>
         ) : (
-          <Selected></Selected>
+          <Selected players={players}></Selected>
         )}
       </div>
     </>

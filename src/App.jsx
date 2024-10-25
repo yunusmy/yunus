@@ -25,13 +25,30 @@ function App() {
       });
     }
   };
+  const [players, setPlayers] = useState([]);
+
+  const addplayering = player => {
+    const isExist = players.find(
+      playing => playing.full_name === player.full_name
+    );
+    if (!isExist) {
+      setPlayers([...players, player]);
+    } else {
+      alert('player already exists in the queue ');
+    }
+  };
 
   return (
     <>
       <div>
         <NavBer></NavBer>
         <Banner></Banner>
-        <Button isActive={isActive} handleStatus={handleStatus}></Button>
+        <Button
+          isActive={isActive}
+          handleStatus={handleStatus}
+          addplayering={addplayering}
+          players={players}
+        ></Button>
         <Subscribe></Subscribe>
         <Footer></Footer>
       </div>
