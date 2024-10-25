@@ -1,0 +1,50 @@
+[
+  {
+    "full_name": "Shakib Hasan",
+    "team": "Dhaka Dominators",
+    "img": "https://i.ibb.co.com/TbTryBZ/Screenshot-7.png",
+    "playing_role": "All-Rounder",
+    "batting_style": "Left-hand Bat",
+    "price": "$1.7 million"
+  },
+  {
+    "full_name": "Tamim Alam",
+    "team": "Chittagong Challengers",
+    "img": "https://i.ibb.co.com/ykJdPy8/Screenshot-8.png",
+    "playing_role": "Opening Batsman",
+    "batting_style": "Right-hand Bat",
+    "price": "$1.2 million"
+  },
+  {
+    "full_name": "Mustafiz Rahman",
+    "team": "Sylhet Sixers",
+    "img": "https://i.ibb.co.com/sFz0M9V/Screenshot-10.png",
+    "playing_role": "Fast Bowler",
+    "batting_style": "Left-hand Bat",
+    "price": "$1.4 million"
+  },
+  {
+    "full_name": "Mominul Islam",
+    "team": "Rajshahi Royals",
+    "img": "https://i.ibb.co.com/T48tGRt/Screenshot-11.png",
+    "playing_role": "Middle-order Batsman",
+    "batting_style": "Right-hand Bat",
+    "price": "$900,000"
+  },
+  {
+    "full_name": "Taskin Ahmed",
+    "team": "Khulna Titans",
+    "img": "https://i.ibb.co.com/djLCVTg/Screenshot-12.png",
+    "playing_role": "Fast Bowler",
+    "batting_style": "Right-hand Bat",
+    "price": "$1.1 million"
+  },
+  {
+    "full_name": "Liton Das",
+    "team": "Comilla Victorians",
+    "img": "https://i.ibb.co.com/tHHYRTj/Screenshot-13.png",
+    "playing_role": "Wicketkeeper-Batsman",
+    "batting_style": "Right-hand Bat",
+    "price": "$1.3 million"
+  }
+]
