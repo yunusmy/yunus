@@ -7,7 +7,6 @@ const AvailablePlayers = () => {
       .then(res => res.json())
       .then(data => setRecipr(data));
   }, []);
-  console.log(recipr);
 
   return (
     <>
