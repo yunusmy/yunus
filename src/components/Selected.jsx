@@ -1,4 +1,4 @@
-const Selected = ({ players }) => {
+const Selected = ({ players, handleRemove }) => {
   return (
     <>
       <div>
@@ -11,7 +11,12 @@ const Selected = ({ players }) => {
                 <p>{player.batting_style}</p>
               </div>
             </div>
-            <button className="btn bg-lime-300">Delete</button>
+            <button
+              className="btn bg-lime-300"
+              onClick={() => handleRemove(player.full_name)}
+            >
+              Delete
+            </button>
           </div>
         ))}
         <button className="btn bg-lime-300 my-8">Add More Player</button>

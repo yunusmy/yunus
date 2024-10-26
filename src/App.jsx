@@ -37,17 +37,31 @@ function App() {
       alert('player already exists in the queue ');
     }
   };
+  const [play, setPlay] = useState([]);
+  const handleRemove = id => {
+    const removePlayer = players.find(play => play.full_name === id);
+
+    const updatedData = players.filter(p => p.full_name !== id);
+    setPlayers(updatedData);
+    setPlay([...play, removePlayer]);
+  };
+
+  const [freeCoin, setfreeCoin] = useState(0);
+  const freeCoins = coin => {
+    setfreeCoin(coin + freeCoin);
+  };
 
   return (
     <>
       <div>
-        <NavBer></NavBer>
-        <Banner></Banner>
+        <NavBer freeCoin={freeCoin}></NavBer>
+        <Banner freeCoins={freeCoins}></Banner>
         <Button
           isActive={isActive}
           handleStatus={handleStatus}
           addplayering={addplayering}
           players={players}
+          handleRemove={handleRemove}
         ></Button>
         <Subscribe></Subscribe>
         <Footer></Footer>

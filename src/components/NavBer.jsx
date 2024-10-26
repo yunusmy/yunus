@@ -1,5 +1,5 @@
 import Logo from '../assets/logo.png';
-const NavBer = () => {
+const NavBer = ({ freeCoin }) => {
   return (
     <>
       <div className="container mx-auto">
@@ -24,7 +24,7 @@ const NavBer = () => {
                 <a>Schedules</a>
               </li>
               <li className="mx-1">
-                <button className="btn">coin</button>
+                <button className="btn text-xl">$ {freeCoin} coin</button>
               </li>
             </ul>
           </div>
