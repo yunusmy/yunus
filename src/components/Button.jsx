@@ -32,7 +32,11 @@ const Button = ({
         {isActive.able ? (
           <AvailablePlayers addplayering={addplayering}></AvailablePlayers>
         ) : (
-          <Selected players={players} handleRemove={handleRemove}></Selected>
+          <Selected
+            players={players}
+            handleRemove={handleRemove}
+            handleStatus={handleStatus}
+          ></Selected>
         )}
       </div>
     </>
