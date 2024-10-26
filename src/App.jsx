@@ -26,7 +26,7 @@ function App() {
     }
   };
   const [players, setPlayers] = useState([]);
-
+  console.log(players.price);
   const addplayering = player => {
     const isExist = players.find(
       playing => playing.full_name === player.full_name
@@ -46,7 +46,7 @@ function App() {
     setPlay([...play, removePlayer]);
   };
 
-  const [freeCoin, setfreeCoin] = useState(0);
+  const [freeCoin, setfreeCoin] = useState(500);
   const freeCoins = coin => {
     setfreeCoin(coin + freeCoin);
   };
